@@ -59,7 +59,7 @@ app.use(hpp({
 //Test middleware
 app.use((req, res, next) => {
     req.requesTime = new Date().toISOString();
-    console.log(req.cookies);
+    // console.log(req.cookies);
     next();
 });
 
